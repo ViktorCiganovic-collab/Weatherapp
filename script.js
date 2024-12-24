@@ -109,8 +109,21 @@ if (localWeather == "Overcast") {
 
     imgBackground.style.backgroundImage = "url('https://www.iconarchive.com/download/i18091/icons-land/weather/Overcast.ico')"
     document.getElementById("initialImg").style.opacity = "0";
+}
+
+if (localWeather == "Snow, Rain, Partially cloudy") {
+
+    imgBackground.style.backgroundImage = "url('https://static.vecteezy.com/system/resources/previews/010/425/906/non_2x/scattered-snow-color-icon-snowy-light-snow-partly-cloudy-winter-weather-cloud-snowflake-and-sun-weather-forecast-isolated-illustration-vector.jpg')"
+    document.getElementById("initialImg").style.opacity = "0";
+}
+
+if (localWeather == "Snow, Rain, Overcast") {
+
+    imgBackground.style.backgroundImage = "url('https://cdn2.iconfinder.com/data/icons/weather-icon-set/256/rain_snow.png')"
+    document.getElementById("initialImg").style.opacity = "0";
 
 }
+
 
 }
 
@@ -182,6 +195,10 @@ for (i = 0; i < 8; i++) {
 
     case "Overcast":
     weatherIcon = '<ion-icon name="cloud-outline" size="large"></ion-icon>';
+    break;
+
+    case "Snow, Rain, Partially cloudy":
+    weatherIcon = '<ion-icon name="snow-outline"></ion-icon>';
     break;
 
     default: 
