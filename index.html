@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+</head>
+<body>
+
+<h1>Weather Forecast</h1>
+
+<div id="input">
+<button onclick="getData()" id="btn">Get Weather Info</button>
+<input placeholder="Type in a location" class="inputLocation">
+
+</div>
+
+<div class="imgDisplayingWeatherDetails">
+<img id="initialImg" src="https://cdn.iconscout.com/icon/free/png-256/free-sun-icon-download-in-svg-png-gif-file-formats--nature-summer-weather-day-miscellaneous-pack-user-interface-icons-3458663.png?f=webp&w=256">
+</div>
+
+
+
+
+<section class="Information">
+
+    <div class="labels">
+    <h3>Location Info:<span class="location"></span></h3>
+    <p>Temperature:<span class="content"></span></p>
+    <p>Max temperature:<span class="maxTempInfo"></span></p>
+    <p>Min temperature:<span class="minTempInfo"></span></p>
+    <p>Weather conditions:<span class="conditions"></span></p>
+    <p>Day:<span class="day"></span></p>
+    </div>
+</section>
+
+<section class="weeklyInfo">
+
+<div><span class="header"></span><span></span><span class="header">Temperature</span></div>
+<div class="horizontal-line"></div>
+<div><span class="Today weekDays">Mon</span><span class="iconSun icon"></span><span class="sunday temp"></span></div>
+<div class="horizontal-line"></div>
+<div><span class="Tomorrow weekDays">Tue</span><span class="iconSun icon"></span><span class="sunday temp"></span></div>
+<div class="horizontal-line"></div>
+<div><span class="Overmorrow weekDays">Wed</span><span class="iconMon icon"></span><span class="monday temp"></span></div>
+<div class="horizontal-line"></div>
+<div><span class="day3 weekDays">Thu</span><span class="iconTues icon"></span><span class="tuesday temp"></span></div>
+<div class="horizontal-line"></div>
+<div><span class="day4 weekDays">Fri</span><span class="iconWed icon"></span><span class="wednesday temp"></span></div>
+<div class="horizontal-line"></div>
+<div><span class="day5 weekDays">Sat</span><span class="iconThursday icon"></span><span class="thursday temp"></span></div>
+<div class="horizontal-line"></div>
+<div><span class="day6 weekDays">Sun</span><span class="iconFri icon"></span><span class="friday temp"></span></div>
+<div class="horizontal-line"></div>
+<div><span class="day7 weekDays">Mon</span><span class="iconSat icon"></span><span class="Saturday temp"></span></div>
+</section>
+
+<p id="demo"></p>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
