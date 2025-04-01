@@ -7,13 +7,13 @@ body {
     color:azure;
     /* background-image: url("https://pics.craiyon.com/2023-11-16/BjUZcXlZRQWOWgYFMXELWw.webp"); */
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 35%, rgba(0,212,255,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    overflow-x: hidden;
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
